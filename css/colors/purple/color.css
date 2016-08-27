@@ -58,7 +58,7 @@ a:hover { color:#63378B; }
 	.post-heading-left.border-style2.post-heading-center-xs h2 { background-image:url(border-post-heading-center.png); }
 	.bg-color .post-heading-left.post-heading-center-xs h2, .bg-parallax .post-heading-left.post-heading-center-xs h2, .bg-color .post-heading-left.border-style2.post-heading-center-xs h2, .bg-parallax .post-heading-left.border-style2.post-heading-center-xs h2 { background-image:url(../../../images/border-post-heading-center-white.png); }
 	
-	#navigation.navbar, #navigation.navbar.stickit { background-color:#ab77e1; }
+	#navigation.navbar, #navigation.navbar.stickit { background-color:#9862d0; }
 	#navigation.navbar-default .navbar-collapse { background-color:#9862d0; }
 	#navigation .nav > li > a { color:#63378B; }
 	#navigation .nav > li.menu-btn > a {
