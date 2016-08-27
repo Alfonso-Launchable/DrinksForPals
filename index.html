@@ -961,7 +961,7 @@
 
 
 
-<form action="//formspree.io/admin@drinksforpals.com"  name="sentMessage" id="contactForm" novalidate>
+<form action="//formspree.io/admin@drinksforpals.com"  name="sentMessage" id="contactForm" novalidate method="POST">
     <div class="affa-form-contact animation row control-group" data-animation="animation-fade-in-up">
         <div class="form-group col-xs-12 floating-label-form-group controls">
             <input type="text" name="name" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
@@ -975,10 +975,10 @@
         </div>
     </div>
     <br>
-    <div id="success"></div>
+     <div id="success"></div>
     <div class="row">
-        <div class="affa-form-contact animation row control-group  text-center" data-animation="animation-fade-in-up">
-            <button type="submit" class="btn-lg btn-Submit btn-primary">Subscribe</button>
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <button type="submit" class="btn btn-primary">Send</button>
         </div>
     </div>
 </form>
