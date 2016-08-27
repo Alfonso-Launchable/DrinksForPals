@@ -2022,3 +2022,63 @@ button.close:hover {
 }
 
 
+
+.btn-Submit { 
+  color: #ffffff; 
+  background-color: #58307F; 
+  border-color: #58307F; 
+} 
+ 
+.btn-Submit:hover, 
+.btn-Submit:focus, 
+.btn-Submit:active, 
+.btn-Submit.active, 
+.open .dropdown-toggle.btn-Submit { 
+  color: #ffffff; 
+  background-color: #7C45B3; 
+  border-color: #58307F; 
+} 
+ 
+.btn-Submit:active, 
+.btn-Submit.active, 
+.open .dropdown-toggle.btn-Submit { 
+  background-image: none; 
+} 
+ 
+.btn-Submit.disabled, 
+.btn-Submit[disabled], 
+fieldset[disabled] .btn-Submit, 
+.btn-Submit.disabled:hover, 
+.btn-Submit[disabled]:hover, 
+fieldset[disabled] .btn-Submit:hover, 
+.btn-Submit.disabled:focus, 
+.btn-Submit[disabled]:focus, 
+fieldset[disabled] .btn-Submit:focus, 
+.btn-Submit.disabled:active, 
+.btn-Submit[disabled]:active, 
+fieldset[disabled] .btn-Submit:active, 
+.btn-Submit.disabled.active, 
+.btn-Submit[disabled].active, 
+fieldset[disabled] .btn-Submit.active { 
+  background-color: #58307F; 
+  border-color: #58307F; 
+} 
+ 
+.btn-Submit .badge { 
+  color: #58307F; 
+  background-color: #ffffff; 
+}
+
+.center {
+    text-align:center;
+}
+
+.center form {
+    display:inline-block;
+}
+
+
+
+
+
+
