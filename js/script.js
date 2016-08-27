@@ -83,114 +83,122 @@
 		// Slider with Slick carousel
 		Carousel: function() {
 			// Teams carousel
-			$('.carousel-slider.affa-team-row').slick({
-				slidesToShow: 3,
-				infinite: false,
-				speed: 300,
-				draggable: false,
-				responsive: [
-					{
-						breakpoint: 1440,
-						settings: {
-							slidesToShow: 2
+			$('.carousel-slider.affa-team-row').each(function() {
+				$(this).slick({
+					slidesToShow: 3,
+					infinite: false,
+					speed: 300,
+					draggable: false,
+					responsive: [
+						{
+							breakpoint: 1440,
+							settings: {
+								slidesToShow: 2
+							}
+						},
+						{
+							breakpoint: 992,
+							settings: {
+								slidesToShow: 1
+							}
+						},
+						{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 3,
+								draggable: true
+							}
+						},
+						{
+							breakpoint: 540,
+							settings: {
+								slidesToShow: 2
+							}
+						},
+						{
+							breakpoint: 340,
+							settings: {
+								slidesToShow: 1
+							}
 						}
-					},
-					{
-						breakpoint: 992,
-						settings: {
-							slidesToShow: 1
-						}
-					},
-					{
-						breakpoint: 768,
-						settings: {
-							slidesToShow: 3,
-							draggable: true
-						}
-					},
-					{
-						breakpoint: 540,
-						settings: {
-							slidesToShow: 2
-						}
-					},
-					{
-						breakpoint: 340,
-						settings: {
-							slidesToShow: 1
-						}
-					}
-				]
+					]
+				});
 			});
 			
 			// Testimonials carousel
-			$('.carousel-slider.affa-testimonials-carousel').slick({
-				arrows: false,
-				dots: true,
-				fade: true,
-				cssEase: 'linear',
-				speed: 300,
-				draggable: false,
-				responsive: [{
-					breakpoint: 768,
-					settings: {
-						draggable: true
-					}
-				}]
+			$('.carousel-slider.affa-testimonials-carousel').each(function() {
+				$(this).slick({
+					arrows: false,
+					dots: true,
+					fade: true,
+					cssEase: 'linear',
+					speed: 300,
+					draggable: false,
+					responsive: [{
+						breakpoint: 768,
+						settings: {
+							draggable: true
+						}
+					}]
+				});
 			});
 			
 			// Gallery slider
-			$('.carousel-slider.gallery-slider').slick({
-				arrows: false,
-				dots: true,
-				slidesToShow: 7,
-				slidesToScroll: 2,
-				speed: 300,
-				draggable: false,
-				responsive: [
-					{
-						breakpoint: 1200,
-						settings: {
-							slidesToShow: 5
+			$('.carousel-slider.gallery-slider').each(function() {
+				$(this).slick({
+					arrows: false,
+					dots: true,
+					slidesToShow: 7,
+					slidesToScroll: 2,
+					speed: 300,
+					draggable: false,
+					responsive: [
+						{
+							breakpoint: 1200,
+							settings: {
+								slidesToShow: 5
+							}
+						},
+						{
+							breakpoint: 992,
+							settings: {
+								slidesToShow: 3
+							}
+						},
+						{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 2,
+								draggable: true
+							}
+						},
+						{
+							breakpoint: 400,
+							settings: {
+								arrows: true,
+								dots: false,
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
 						}
-					},
-					{
-						breakpoint: 992,
-						settings: {
-							slidesToShow: 3
-						}
-					},
-					{
-						breakpoint: 768,
-						settings: {
-							slidesToShow: 2,
-							draggable: true
-						}
-					},
-					{
-						breakpoint: 400,
-						settings: {
-							arrows: true,
-							dots: false,
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-				]
+					]
+				});
 			});
 			
 			// General slider
-			$('.carousel-slider.general-slider').slick({
-				dots: true,
-				speed: 300,
-				adaptiveHeight: true,
-				draggable: false,
-				responsive: [{
-					breakpoint: 768,
-					settings: {
-						draggable: true
-					}
-				}]
+			$('.carousel-slider.general-slider').each(function() {
+				$(this).slick({
+					dots: true,
+					speed: 300,
+					adaptiveHeight: true,
+					draggable: false,
+					responsive: [{
+						breakpoint: 768,
+						settings: {
+							draggable: true
+						}
+					}]
+				});
 			}).on('afterChange', function() {
 				$(window).trigger('resize.px.parallax');
 			});
@@ -242,25 +250,12 @@
 		Form: function() {
 			var pattern = /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i;
 			
-			// Checking contact subcribe form input when focus and keypress event
+			// Checking form input when focus and keypress event
 			$('.affa-form-contact input[type="text"], .affa-form-contact input[type="email"], .affa-form-contact textarea').on('focus keypress', function() {
 				var $input = $(this);
 				
 				if ($input.hasClass('error')) {
 					$input.removeClass('error');
-				}
-			});
-			
-			// Checking subcribe form input when focus and keypress event
-			$('.affa-form-subscribe input[type="text"], .affa-form-subscribe input[type="email"]').live('focus keypress', function() {
-				var $input = $(this);
-				
-				if ($input.hasClass('error')) {
-					$input.val('').removeClass('error');
-				}
-				
-				if ($input.hasClass('success')) {
-					$input.val('').removeClass('success');
 				}
 			});
 			
@@ -323,43 +318,6 @@
 				
 				return false;
 			});
-			
-			// Subscribe form when submit button clicked
-			$('.affa-form-subscribe').submit(function() {
-				var $email	= $(this).find('input[name="email"]');
-				var $submit	= $(this).find('input[name="submit"]');
-				
-				if (pattern.test($email.val()) === false) {
-					$email.val('Please enter a valid email address!').addClass('error');
-				} else {
-					var submitData = $(this).serialize();
-					$email.attr('disabled','disabled');
-					$submit.attr('disabled','disabled');
-					
-					$.ajax({
-						type: 'POST',
-						url: 'process-subscribe.php',
-						data: submitData + '&action=add',
-						dataType: 'html',
-						success: function(msg) {
-							if (parseInt(msg, 0) !== 0) {
-								var msg_split = msg.split('|');
-								
-								if (msg_split[0] === 'success') {
-									$submit.removeAttr('disabled');
-									$email.removeAttr('disabled').val(msg_split[1]).addClass('success');
-								} else {
-									$submit.removeAttr('disabled');
-									$email.removeAttr('disabled').val(msg_split[1]).addClass('error');
-								}
-							}
-						}
-					});
-				}
-				
-				return false;
-			});
-			
 		},
 		
 		// Embed animation effects to HTML elements with CSS3

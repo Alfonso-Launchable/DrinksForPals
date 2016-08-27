@@ -28,6 +28,8 @@ a:hover { color:#404040; }
 
 #preloader .spinner { background:url(page-loader.gif) }
 
+#header a { color:#f2d183; }
+
 #navigation .nav > li.menu-btn > a { background-color:#eabc4e !important; }
 #navigation .nav > li.menu-btn > a:hover, #navigation .nav > li.menu-btn.active > a { background:#d9aa3a !important; }
 #navigation .navbar-toggle .icon-bar { background-color:#f8edd4; }
