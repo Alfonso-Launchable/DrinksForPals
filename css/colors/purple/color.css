@@ -47,7 +47,7 @@ a:hover { color:#63378B; }
 	border-color:#63378B;
 }
 .tbl-pricing .tbl-prc-col .tbl-prc-footer .btn-custom:hover, .tbl-pricing .tbl-prc-col.tbl-prc-col-recommended .tbl-prc-footer .btn-custom {
-	color:#FFF !important;
+	color:#000 !important;
 	background-color:#63378B;
 }
 .tbl-pricing .tbl-prc-col.tbl-prc-col-recommended .tbl-prc-footer .btn-custom:hover { background-color:#63378B; }
@@ -58,14 +58,14 @@ a:hover { color:#63378B; }
 	.post-heading-left.border-style2.post-heading-center-xs h2 { background-image:url(border-post-heading-center.png); }
 	.bg-color .post-heading-left.post-heading-center-xs h2, .bg-parallax .post-heading-left.post-heading-center-xs h2, .bg-color .post-heading-left.border-style2.post-heading-center-xs h2, .bg-parallax .post-heading-left.border-style2.post-heading-center-xs h2 { background-image:url(../../../images/border-post-heading-center-white.png); }
 	
-	#navigation.navbar, #navigation.navbar.stickit { background-color:#9862d0; }
-	#navigation.navbar-default .navbar-collapse { background-color:#9862d0; }
-	#navigation .nav > li > a { color:#63378B; }
+	#navigation.navbar, #navigation.navbar.stickit { background-color:#FFFFFF; }
+	#navigation.navbar-default .navbar-collapse { background-color:#FFFFFF; }
+	#navigation .nav > li > a { color:#000000; }
 	#navigation .nav > li.menu-btn > a {
 		color:#63378B !important;
 		background-color:transparent !important;
 	}
-	#navigation .nav > li > a:hover, #navigation .nav > li.active > a { color:#FFF; }
-	#navigation .nav > li.menu-btn > a:hover, #navigation .nav > li.menu-btn.active > a { color:#FFF !important; }
+	#navigation .nav > li > a:hover, #navigation .nav > li.active > a { color:#63378B; }
+	#navigation .nav > li.menu-btn > a:hover, #navigation .nav > li.menu-btn.active > a { color:#63378B !important; }
 	
 }

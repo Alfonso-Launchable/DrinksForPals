@@ -300,20 +300,20 @@ input[type="button"], input[type="submit"], input[type="reset"], button {
 .btn-custom.btn-orange:hover, input[type="button"].btn-orange:hover, input[type="submit"].btn-orange:hover, input[type="reset"].btn-orange:hover, button.btn-orange:hover { background-color:#ed7641; }
 .btn-custom.btn-pink, input[type="button"].btn-pink, input[type="submit"].btn-pink, input[type="reset"].btn-pink, button.btn-pink { background-color:#f46eb7; }
 .btn-custom.btn-pink:hover, input[type="button"].btn-pink:hover, input[type="submit"].btn-pink:hover, input[type="reset"].btn-pink:hover, button.btn-pink:hover { background-color:#e358a4; }
-.btn-custom.btn-purple, input[type="button"].btn-purple, input[type="submit"].btn-purple, input[type="reset"].btn-purple, button.btn-purple { background-color:#ab77e1; }
+.btn-custom.btn-purple, input[type="button"].btn-purple, input[type="submit"].btn-purple, input[type="reset"].btn-purple, button.btn-purple { background-color:#9862D0 ; }
 .btn-custom.btn-purple:hover, input[type="button"].btn-purple:hover, input[type="submit"].btn-purple:hover, input[type="reset"].btn-purple:hover, button.btn-purple:hover { background-color:#9862d0; }
 .btn-custom.btn-yellow, input[type="button"].btn-yellow, input[type="submit"].btn-yellow, input[type="reset"].btn-yellow, button.btn-yellow { background-color:#eabc4e; }
 .btn-custom.btn-yellow:hover, input[type="button"].btn-yellow:hover, input[type="submit"].btn-yellow:hover, input[type="reset"].btn-yellow:hover, button.btn-yellow:hover { background-color:#d9aa3a; }
 .btn-custom.disabled, input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled, button:disabled, .btn-custom.disabled:hover, input[type="button"]:disabled:hover, input[type="submit"]:disabled:hover, input[type="reset"]:disabled:hover, button:disabled:hover {
 	color:#999 !important;
-	background:#e0e0e0;
+	background:#e0e0e0;        
 	cursor:default;
 	box-shadow:none;
 }
 
 button.close {
 	font-family:Arial, Helvetica, sans-serif;
-	color:#404040 !important;
+	color:#9862D0 !important;
 	font-size:20px;
 	margin:0px;
 	border-radius:0px;
@@ -720,33 +720,6 @@ button.close:hover {
 	}
 	.affa-form-contact input[type="text"].error, .affa-form-contact input[type="email"].error, .affa-form-contact textarea.error { border-color:#d43d3d; }
 	
-.affa-form-subscribe { position:relative; }
-	.affa-form-subscribe input[type="text"], .affa-form-subscribe input[type="email"] {
-		width:100%;
-		padding-right:135px;
-		border:0px;
-		border-radius:15px;
-	}
-	.ie .affa-form-subscribe input[type="text"], .ie .affa-form-subscribe input[type="email"] { line-height:50px; }
-	.affa-form-subscribe input[type="submit"] {
-		position:absolute;
-		top:0px;
-		right:0px;
-		bottom:0px;
-		width:120px;
-		text-align:center;
-		padding:0px;
-		border-radius:0px 15px 15px 0px;
-	}
-	.affa-form-subscribe input[type="text"].success, .affa-form-subscribe input[type="email"].success {
-		color:#4ba94b;
-		background-color:#bcf4bc;
-	}
-	.affa-form-subscribe input[type="text"].error, .affa-form-subscribe input[type="email"].error {
-		color:#d15858;
-		background-color:#f8c5c5;
-	}
-	
 .sep-border {
 	overflow:hidden;
 	height:5px;
@@ -770,9 +743,6 @@ button.close:hover {
 /* ========================= Preloader ========================= */
 
 
-
-
-
 /* ========================= Header ========================= */
 
 #header {
@@ -780,12 +750,8 @@ button.close:hover {
 	text-shadow:0px 1px 2px rgba(0,0,0,.2);
 	background-size:cover;
 	opacity:0;
-	
 }
-	#header .header-overlay {
-		
-		padding-top:60px;
-	}
+	
 	#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 { color:#FFF; }
 	#header a { color:#EEE; }
 	#header a:hover { color:#FFF; }
@@ -804,13 +770,12 @@ button.close:hover {
 		}
 		.ie #header .affa-form-subscribe input[type="text"], .ie #header .affa-form-subscribe input[type="email"] { line-height:60px; }
 	#header .text-desc {
-		font-size:25px;
+		font-size:15px;
 		line-height:20px;
 		font-weight:300;
 		text-shadow:none;
 		margin:8px 0px 0px;
 	}
-
 
 
 /* ========================= Navigation ========================= */
@@ -1462,6 +1427,14 @@ button.close:hover {
 	.col-text60, .col-text80 { padding-top:20px; }
 	.col-text100, .col-text120 { padding-top:40px; }
 	
+	#header .header-text { padding-top:70px; }
+	#header .header-logo { margin-bottom:60px; }
+	#header .header-heading {
+		font-size:38px;
+		line-height:46px;
+	}
+	#header .header-button { padding-left:0px; }
+	
 	#navigation .nav > li {
 		padding-right:16px;
 		padding-left:16px;
@@ -1608,7 +1581,14 @@ button.close:hover {
 	
 	.col-text40, .col-text60, .col-text80, .col-text100, .col-text120 { padding-top:0px; }
 	
-	#header .header-text { padding-top:200px; }
+	#header .header-text { padding-top:70px; }
+	#header .header-logo { margin-bottom:60px; }
+	#header .header-heading {
+		font-size:38px;
+		line-height:46px;
+		
+	}
+	#header .header-button { padding-left:0px; }
 	
 	#navigation .nav > li {
 		padding-right:5px;
@@ -1787,15 +1767,28 @@ button.close:hover {
 	
 	.affa-form-contact { width:auto; }
 	
-	#header .header-text {
-		font-size:18px;
-		line-height:26px;
-		text-align:center;
-		padding:0px 0px 60px 0px;
+	#header .header-img {
+		padding:0px 27%;
+		margin-bottom:40px;
 	}
-	#header .header-logo { margin-bottom:30px; }
-	#header .affa-form-subscribe { margin:40px 10% 0px; }
-	#header .header-img { display:none; }
+	#header .header-text {
+		text-align:center;
+		padding-top:0px;
+	}
+	#header .header-logo { margin-bottom:25px; }
+	#header .header-content { margin-top:20px; }
+	#header .header-content p { margin-bottom:10px; }
+	#header .header-button {
+		padding-left:0px;
+		margin-top:30px;
+	}
+	#header .header-button a {
+		display:inline-block;
+		float:none;
+		margin:0px 20px;
+	}
+	#header .header-button .link, #header .header-button .btn-custom { margin:0px 25px; }
+	#header .header-button .header-button-sep { display:none; }
 	
 	#navigation.navbar {
 		position:relative;
@@ -1903,10 +1896,7 @@ button.close:hover {
 	
 	.col-padding-xs { padding:0px 17%; }
 	
-	#header .affa-form-subscribe {
-		margin-right:7%;
-		margin-left:7%;
-	}
+	#header .header-img { padding:0px 22%; }
 	
 	#navigation.navbar-default.navbar-no-logo-xs .navbar-collapse { padding:0px 60px; }
 	
@@ -1918,11 +1908,6 @@ button.close:hover {
 
 @media (max-width: 540px) {
 	
-	#header .affa-form-subscribe {
-		margin-right:4%;
-		margin-left:4%;
-	}
-	
 	.affa-team-profile .affa-team-profile-overlay { padding-top:14%; }
 	
 }
@@ -1931,10 +1916,7 @@ button.close:hover {
 	
 	.col-padding-xs { padding:0px 14%; }
 	
-	#header .affa-form-subscribe {
-		margin-right:0px;
-		margin-left:0px;
-	}
+	#header .header-img { padding:0px 15%; }
 	
 	#navigation.navbar-default.navbar-no-logo-xs .navbar-collapse { padding:0px 15px; }
 	
@@ -1960,17 +1942,11 @@ button.close:hover {
 	
 	.col-padding-xs { padding:0px 15px; }
 	
-	.affa-form-subscribe input[type="text"], .affa-form-subscribe input[type="email"] { padding-right:20px; }
-	.affa-form-subscribe input[type="submit"] {
-		display:block;
-		position:static;
-		top:auto;
-		right:auto;
-		bottom:auto;
-		width:100%;
-		padding:22px 0px 23px;
-		margin-top:10px;
-		border-radius:15px;
+	#header .header-overlay { padding:40px 0px; }
+	#header .header-img { padding:0px; }
+	#header .header-heading {
+		font-size:36px;
+		line-height:44px;
 	}
 	
 	#navigation.navbar-default.navbar-no-logo-xs .navbar-collapse { padding:0px; }
@@ -2012,3 +1988,65 @@ button.close:hover {
 	.tbl-pricing .tbl-prc-col .tbl-prc-footer { margin-top:25px; }
 	
 }
+
+
+
+.btn-Submit { 
+  color: #ffffff; 
+  background-color: #58307F; 
+  border-color: #58307F; 
+} 
+ 
+.btn-Submit:hover, 
+.btn-Submit:focus, 
+.btn-Submit:active, 
+.btn-Submit.active, 
+.open .dropdown-toggle.btn-Submit { 
+  color: #ffffff; 
+  background-color: #7C45B3; 
+  border-color: #58307F; 
+} 
+ 
+.btn-Submit:active, 
+.btn-Submit.active, 
+.open .dropdown-toggle.btn-Submit { 
+  background-image: none; 
+} 
+ 
+.btn-Submit.disabled, 
+.btn-Submit[disabled], 
+fieldset[disabled] .btn-Submit, 
+.btn-Submit.disabled:hover, 
+.btn-Submit[disabled]:hover, 
+fieldset[disabled] .btn-Submit:hover, 
+.btn-Submit.disabled:focus, 
+.btn-Submit[disabled]:focus, 
+fieldset[disabled] .btn-Submit:focus, 
+.btn-Submit.disabled:active, 
+.btn-Submit[disabled]:active, 
+fieldset[disabled] .btn-Submit:active, 
+.btn-Submit.disabled.active, 
+.btn-Submit[disabled].active, 
+fieldset[disabled] .btn-Submit.active { 
+  background-color: #58307F; 
+  border-color: #58307F; 
+} 
+ 
+.btn-Submit .badge { 
+  color: #58307F; 
+  background-color: #ffffff; 
+}
+
+.center {
+    text-align:center;
+}
+
+.center form {
+    display:inline-block;
+}
+
+
+
+
+
+
