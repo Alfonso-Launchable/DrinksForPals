@@ -88,8 +88,8 @@ figure { margin:0px; }
 	figure iframe {
 		overflow:hidden;
 		width:100% !important;
-		background-color:#f4f4f4;
-		border:0px;
+		background-color:#f4f4f4;  
+	 	border:0 none;
 	}
 	
 video {
