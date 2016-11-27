@@ -40,7 +40,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Thanks for subscribing, we hope to be in touch soon! :)  </strong>");
+                        .append("<strong>We just got your message, someone from the team will contact you shortly! :)  </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
